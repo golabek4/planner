@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>HomeForm.ui.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>src/logo.png</file>
+        <file>src/pageOfCallendar.png</file>
+        <file>src/piggyBank.gif</file>
+        <file>Home.qml</file>
+        <file>Second.qml</file>
+        <file>SecondForm.ui.qml</file>
+        <file>Options.qml</file>
+        <file>OptionsForm.ui.qml</file>
+    </qresource>
+</RCC>
