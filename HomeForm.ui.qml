@@ -5,7 +5,8 @@ Page {
     width: 690
     height: 420
     title: qsTr("Your planner")
-
+    property alias textCurrentMonth: textCurrentMonth
+    property alias textCurrentDay: textCurrentDay
     property alias options: options
     property alias pageOfCallendarMouseArea: pageOfCallendarMouseArea
     property alias piggyBankMouseArea: piggyBankMouseArea
@@ -42,8 +43,39 @@ Page {
                 y: 0
                 width: 125
                 height: 131
-            }
 
+                Text {
+                    id: textCurrentMonth
+                    x: 8
+                    y: 2
+                    width: 111
+                    height: 27
+                    enabled: true
+                    font.pixelSize: 25
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    font.family: "Courier"
+                    font.bold: false
+                }
+
+                Text {
+                    id: textCurrentDay
+                    x: 8
+                    y: 40
+                    width: 109
+                    height: 78
+                    text: ""
+                    enabled: true
+                    font.pixelSize: 77
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    topPadding: 0
+                    minimumPixelSize: 59
+                    font.bold: false
+                    font.strikeout: false
+                    font.family: "Verdana"
+                }
+            }
         }
     }
 
